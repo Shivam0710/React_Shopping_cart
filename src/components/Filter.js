@@ -11,7 +11,7 @@ export default class Products extends Component {
                 </div>
                 <div className="col-md-4">
                     <label>Order by
-               <select className="form-control" value={this.props.sort} onChange={this.props.handleSortChange}>
+               <select className="form-control" onChange={this.props.handleSortChange}>
                             <option value="">Select</option>
                             <option value="lowestprice">Lowest to highest</option>
                             <option value="highestprice">Highest to lowest</option>
@@ -20,7 +20,7 @@ export default class Products extends Component {
                 </div>
                 <div className="col-md-4">
                     <label > Filter Size
-               <select className="form-control" value={this.props.size} onChange={this.props.handleSizeChange}>
+               <select className="form-control" onChange={this.props.handleSizeChange}>
                             <option value="">ALL</option>
                             <option value="x">XS</option>
                             <option value="s">S</option>
